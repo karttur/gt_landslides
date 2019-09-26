@@ -1,0 +1,157 @@
+<button id= "toggle_{{foo}}" onclick="hiddencode('{{ foo }}')">Hide/Show {{ site.data.xml[foo].file }}</button>
+<div id="{{ foo }}" style="display:none">
+{% capture text-capture %}
+{% raw %}
+```
+<?xml version='1.0' encoding='utf-8'?>
+<landsattemplate>
+<userproj userid = 'karttur' projectid = 'karttur' tractid= 'karttur' siteid = '*' plotid = '*' system = 'landsat'></userproj>
+
+<!-- landsatscenetemplate  -->
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LT05' product = 'L1TP' subtype='T' collcat = 'T1' collnr='1'
+proccat = 'DN'
+scenenameform = 'LT05_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1.tar.gz'
+basenameform = 'LT05_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1'
+scenecompstr = 'LT05_L1TP_??????_????????_????????_01_T1.tar.gz'
+basecompstr = 'LT05_L1TP_??????_????????_????????_01_T1'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LT05' product = 'L1TP' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LT05_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LT05_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LT05_L1TP_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LT05_L1TP_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LT05' product = 'L1GS' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LT05_L1GS_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LT05_L1GS_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LT05_L1GS_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LT05_L1GS_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LE07' product = 'L1TP' subtype='T' collcat = 'T1' collnr='1'
+proccat = 'DN'
+scenenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1.tar.gz'
+basenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1'
+scenecompstr = 'LE07_L1TP_??????_????????_????????_01_T1.tar.gz'
+basecompstr = 'LE07_L1TP_??????_????????_????????_01_T1'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LE07' product = 'L1TP' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LE07_L1TP_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LE07_L1TP_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LE07' product = 'L1TP' subtype='T' collcat = 'RT' collnr='1'
+proccat = 'DN'
+scenenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_RT.tar.gz'
+basenameform = 'LE07_L1TP_ppprrr_YYYYMMDD_yyyymmdd_RT'
+scenecompstr = 'LE07_L1TP_??????_????????_????????_01_RT.tar.gz'
+basecompstr = 'LE07_L1TP_??????_????????_????????_01_RT'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LE07' product = 'L1GT' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LE07_L1GT_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LE07_L1GT_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LE07_L1GT_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LE07_L1GT_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LC08' product = 'L1TP' subtype='T' collcat = 'T1' collnr='1'
+proccat = 'DN'
+scenenameform = 'LC08_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1.tar.gz'
+basenameform = 'LC08_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T1'
+scenecompstr = 'LC08_L1TP_??????_????????_????????_01_T1.tar.gz'
+basecompstr = 'LC08_L1TP_??????_????????_????????_01_T1'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LC08' product = 'L1TP' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LC08_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LC08_L1TP_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LC08_L1TP_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LC08_L1TP_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+<process processid ='landsatscenetemplate' version ='1.3'>
+<overwrite>N</overwrite>
+<delete>N</delete>
+<parameters source ='LC08' product = 'L1GT' subtype='T' collcat = 'T2' collnr='1'
+proccat = 'DN'
+scenenameform = 'LC08_L1GT_ppprrr_YYYYMMDD_yyyymmdd_01_T2.tar.gz'
+basenameform = 'LC08_L1GT_ppprrr_YYYYMMDD_yyyymmdd_01_T2'
+scenecompstr = 'LC08_L1GT_??????_????????_????????_01_T2.tar.gz'
+basecompstr = 'LC08_L1GT_??????_????????_????????_01_T2'
+archive = 'USGS'
+>
+</parameters>
+</process>
+
+</landsattemplate>
+```
+{% endraw %}
+{% endcapture %}
+{% include widgets/toggle-code.html  toggle-text=text-capture  %}
+</div>

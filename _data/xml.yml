@@ -1,0 +1,17 @@
+templatescenes_2019:
+    file: templatescenes_2019.xml
+    html: templatescenes_2019.html
+    id: templatescenes_2019
+    author: Thomas Gumbricht
+    caption: null
+    credit: null
+    source: null
+
+templatelayers_LT05_L1TP_T_T2_01_2019:
+    file: templatelayers_LT05_L1TP_T_T2_01_2019.xml
+    html: templatelayers_LT05_L1TP_T_T2_01_2019.html
+    id: templatelayers_LT05_L1TP_T_T2_01_2019
+    author: Thomas Gumbricht
+    caption: null
+    credit: null
+    source: null
